@@ -108,6 +108,92 @@ body{
     margin-left: -5%;
 }
 
+.about{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #ff9d50;
+    font-family: Chewy;
+    font-size: 6vmin;
+    margin-left: 2%;
+}
+
+.features {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    color: #de1b40;
+    font-family: Anton;
+    font-size: 4vmin;
+    margin-left: 2%;
+}
+
+.feature1 {
+    position: absolute;
+    top: -15%;
+    left: 5%;
+    transform: rotate(-3deg);
+}
+
+.feature2 {
+    position: absolute;
+    top: 0%;
+    left: 60%;
+    transform: rotate(5deg);
+}
+
+.feature3 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: rotate(0deg);
+}
+
+.feature4 {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: rotate(3deg);
+}
+
+.images img{
+    width: 25vmin;
+    border-radius: 5%;
+}
+
+.image1{
+    position: absolute;
+    bottom: 25%;
+    left: 5%;
+    transform: rotate(-10deg);
+}
+
+.image2{
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    transform: rotate(5deg);
+}
+
+.image3{
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: rotate(13deg);
+}
+
+.image4{
+    position: absolute;
+    bottom: 10%;
+    left: 75%;
+    transform: rotate(-2deg);
+}
+
+.images img:hover{
+    transform:
+    scale(1.05) translateY(-3px) rotate(1deg);
+}
+
 .iconlist{
     display: flex;
     flex-direction: column;

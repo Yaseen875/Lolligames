@@ -13,9 +13,12 @@
 body{
     padding: 0%;
     margin: 0%;
+    overflow-x: hidden;
 }
 
 .home{
+    position: sticky;
+    top: 0;
     height: 100vh;
     background-image: url(images/background.png);
     background-size: cover;
@@ -24,6 +27,8 @@ body{
     align-items: center;
     justify-items: center;
     justify-content: center;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .bored{
@@ -92,4 +97,20 @@ body{
     font-family: Anton;
     position: absolute;
     bottom: 25%;
+}
+
+.scrollable{
+    position: relative;
+    width: 100%;
+    min-height: 85vh;
+    z-index: 2;
+    background: white;
+}
+
+.clouds{
+    position: absolute;
+    width: 110%;
+    height: auto;
+    bottom: 100%;
+    margin-left: -5%;
 }

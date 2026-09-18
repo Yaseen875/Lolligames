@@ -32,11 +32,15 @@ body{
     color: white;
     font-weight: normal;
     position: absolute;
-    bottom: 32%;
+    bottom: 52%;
+
 }
 
 .lets{
-    margin-left: -20%;
+    font-family: Chewy;
+    font-size: 15vmin;
+    color: white;
+    font-weight: normal;
 }
 
 .icon{
@@ -61,15 +65,13 @@ body{
     font-size: 14vmin;
     font-family: Anton;
     font-weight: normal;
-    position: absolute;
-    bottom: 30%;
-    right: 32%;
-    width: 18%;
+    padding-right: 2%;
+    padding-left: 2%;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 20%;
     color: #de1b40;
     background-color: white;
-    box-sizing: border-box;
+    margin-left: 2%;
     transition:
     transform 0.3s cubic-bezier(.2, 1.4, .4, 1),
     box-shadow 0.3s ease;
@@ -81,7 +83,7 @@ body{
     scale(1.05) translateY(-3px) rotate(1deg);
     cursor: pointer;
     box-shadow: 0 10px 0 rgba(0, 0, 0, 0.12);
-    padding-left: 10px;
+
 }
 
 .description{

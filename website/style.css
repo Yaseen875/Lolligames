@@ -27,8 +27,6 @@ body{
     align-items: center;
     justify-items: center;
     justify-content: center;
-    overflow: hidden;
-    z-index: 1;
 }
 
 .bored{
@@ -48,11 +46,36 @@ body{
     font-weight: normal;
 }
 
-.icon{
+.iconlist{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
     position: absolute;
     top: 5%;
-    right: 5%;
+    right: 2%;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.icon{
     height: 10vmin;
+
+}
+.dropdown{
+    list-style-type: none;
+    color: white;
+    font-size: 3vmin;
+    font-family: Anton;
+    text-align: center;
+    padding: 0 5;
+    margin: 0;
+    background-color: hsla(354, 78%, 40%, 26%)
+    
+}
+
+li{
+margin-top: 0.5rem;
 }
 
 .title{
@@ -97,20 +120,4 @@ body{
     font-family: Anton;
     position: absolute;
     bottom: 25%;
-}
-
-.scrollable{
-    position: relative;
-    width: 100%;
-    min-height: 85vh;
-    z-index: 2;
-    background: white;
-}
-
-.clouds{
-    position: absolute;
-    width: 110%;
-    height: auto;
-    bottom: 100%;
-    margin-left: -5%;
 }

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Party Games</string>
+    <string name="roll">Roll</string>
+    <string name="bored">Bored?</string>
+    <string name="lets">Let\'s</string>
+    <string name="play">Play</string>
+    <string name="project_name">Lolligames</string>
+</resources>

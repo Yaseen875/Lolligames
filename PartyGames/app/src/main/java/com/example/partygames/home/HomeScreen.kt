@@ -29,13 +29,16 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.example.partygames.R
+import com.example.partygames.Routes
 import com.example.partygames.ui.theme.PartyGamesTheme
 import com.example.partygames.ui.theme.antonFont
 import com.example.partygames.ui.theme.chewyFont
 
 @Composable
-fun HomeScreen() {
+fun HomeScreen(navController: NavController) {
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
@@ -54,18 +57,17 @@ fun HomeScreen() {
             fontWeight = FontWeight.Normal,
             modifier = Modifier
                 .align(Alignment.TopStart)
-                .padding(top = 8.dp, start = 12.dp)
+                .padding(top = 28.dp, start = 12.dp)
 
         )
-        Image(
+        Image( //logo
             painter = painterResource(R.drawable.white_swirl),
             contentDescription = null,
             modifier = Modifier
                 .size(64.dp)
                 .align(Alignment.TopEnd)
-                .padding(top = 2.dp, end = 2.dp)
+                .padding(top = 24.dp, end = 2.dp)
         )
-
         Column(
             modifier = Modifier.fillMaxSize(),
             verticalArrangement = Arrangement.Top,
@@ -88,8 +90,8 @@ fun HomeScreen() {
                 fontFamily = chewyFont,
                 fontWeight = FontWeight.Normal
             )
-            Button(
-                onClick = {/*TODO*/ },
+            Button( //play button
+                onClick = {navController.navigate(route = Routes.playmenu)},
                 colors = ButtonDefaults.buttonColors(
                     containerColor = Color.White,
                     contentColor = colorResource(R.color.light_red)
@@ -108,16 +110,62 @@ fun HomeScreen() {
                     fontWeight = FontWeight.Normal
                 )
             }
-            Box(
-                modifier = Modifier.fillMaxSize(),
-                contentAlignment = Alignment.Center
-            ) {
-                // do the "or" thing, sitting between two horizontal lines,
-                // and below will be setting with gear symbol in shaa allah
-                // and also about devs with some icon from flaticon
-                //try to use other colors, not just red, maybe another shade of red or idk
-                //make the two buttons smaller than the play button
                 //the play button should lead to the menu yk, game catalog or tournaments and so on
+            }
+        Text(
+            text = stringResource(R.string.or),
+            color = Color.White,
+            fontWeight = FontWeight.Bold,
+            fontSize = 16.sp
+        )
+        Column(
+
+        ) {
+            Spacer(
+                modifier = Modifier.height(230.dp)
+            )
+            Button( //settings button
+                    onClick = {navController.navigate(route = Routes.settings)},
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color.White,
+                        contentColor = colorResource(R.color.light_red)
+                    ),
+                    shape = RoundedCornerShape(32.dp),
+                    modifier = Modifier
+                        .height(72.dp)
+                        .width(200.dp)
+
+                ) {
+                    Text(
+                        text = stringResource(R.string.settings),
+                        color = colorResource(R.color.crimson),
+                        fontSize = 44.sp,
+                        fontFamily = chewyFont,
+                        fontWeight = FontWeight.Normal
+                    )
+            }
+            Spacer(
+                modifier = Modifier.height(24.dp)
+            )
+            Button( //about devs button
+                onClick = {navController.navigate(route = Routes.aboutdevs)},
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color.White,
+                    contentColor = colorResource(R.color.light_red)
+                ),
+                shape = RoundedCornerShape(32.dp),
+                modifier = Modifier
+                    .height(72.dp)
+                    .width(200.dp)
+
+            ) {
+                Text(
+                    text = stringResource(R.string.about_devs),
+                    color = colorResource(R.color.crimson),
+                    fontSize = 34.sp,
+                    fontFamily = chewyFont,
+                    fontWeight = FontWeight.Normal
+                )
             }
         }
     }
@@ -128,6 +176,6 @@ fun HomeScreen() {
 @Composable
 fun HomePreview() {
     PartyGamesTheme {
-        HomeScreen()
+        HomeScreen(navController = rememberNavController())
     }
 }

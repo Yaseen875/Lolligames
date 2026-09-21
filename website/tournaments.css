@@ -47,10 +47,52 @@ body{
     font-size: 4vmin;
     position: absolute;
     top: 10.5%;
-    left: 9%;
+    left: 7%;
     color: white;
     font-weight: normal;
     cursor: pointer;
+}
+
+.crown{
+    position: relative;
+    width: 20vmin;
+    bottom: 25%;
+}
+
+.question{
+    position: absolute;
+    font-family: Chewy;
+    font-size: 8vmin;
+    color: white;
+    bottom: 45%;
+    font-weight: normal;
+}
+
+.button{
+    text-decoration: none;
+    font-size: 10vmin;
+    font-family: Anton;
+    font-weight: normal;
+    padding-right: 2%;
+    padding-left: 2%;
+    text-align: center;
+    border-radius: 5%;
+    color: #de1b40;
+    background-color: white;
+    margin-left: 2%;
+    position: absolute;
+    top: 40%;
+    right: 27%;
+    transition:
+    transform 0.3s cubic-bezier(.2, 1.4, .4, 1),
+    box-shadow 0.3s ease;
+}
+
+.button:hover{
+    transform:
+    scale(1.05) translateY(-3px) rotate(1deg);
+    cursor: pointer;
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .iconlist{
@@ -104,64 +146,4 @@ li:hover{
 .icon:hover,
 .icon:hover {
     animation-play-state: paused;
-}
-
-.gamemodes img{
-    position: absolute;
-    width: 20%;
-    border: #ff9d50 solid 3px;
-    border-radius: 15%;
-}
-.game1{
-    right: 65%;
-    bottom: 50%;
-}
-
-.game2{
-    right: 65%;
-    bottom: 10%;
-}
-
-.game3{
-    left: 65%;
-    bottom: 50%;
-}
-
-.game4{
-    left: 65%;
-    bottom: 10%;
-}
-
-.gamemodes img:hover{
-    transform:
-    scale(1.02);
-    cursor: pointer;
-}
-
-.names h3{
-    font-family: Chewy;
-    font-size: 6vmin;
-    position: absolute;
-    color: white;
-    font-weight: normal;
-}
-
-.name1{
-    right: 71.5%;
-    bottom: 35%;
-}
-
-.name2{
-    right: 71.5%;
-    bottom: -5%;
-}
-
-.name3{
-    left: 71.5%;
-    bottom: 35%;
-}
-
-.name4{
-    left: 71.5%;
-    bottom: -5%;
 }

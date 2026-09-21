@@ -102,16 +102,9 @@ li:hover{
 }
 
 .icon:hover,
-.icon:hover + .dropdown,
-.dropdown:hover {
+.icon:hover {
     animation-play-state: paused;
 }
-
-.icon:hover + .dropdown, .dropdown:hover{
-    animation: appear 1s ease-out forwards; 
-}
-
-
 
 .ga{
     position: absolute;

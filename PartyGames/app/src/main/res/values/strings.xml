@@ -8,5 +8,13 @@
     <string name="or">------------------OR------------------</string>
     <string name="settings">Settings</string>
     <string name="about_devs">About devs</string>
-    <string name="yusuf">Yusuf Wael</string>
+    <string name="yusuf_name">Yusuf Wael</string>
+    <string name="essa_name">Essa Esmat</string>
+    <string name="yaseen_name">Yaseen Hamza</string>
+    <string name="yusuf_about">Android App Developer | Age: 16</string>
+    <string name="essa_about">Web Developer | Age: 17</string>
+    <string name="yaseen_about">Web Developer | Age: 16</string>
+    <string name="the">the</string>
+    <string name="lollidevs">Lollidevs</string>
+    <string name="school">STEM High School for Boys - 6th of October</string>
 </resources>

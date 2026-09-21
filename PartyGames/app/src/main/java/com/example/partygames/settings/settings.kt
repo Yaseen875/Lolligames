@@ -38,14 +38,49 @@ import com.example.partygames.ui.theme.antonFont
 import com.example.partygames.ui.theme.chewyFont
 
 @Composable
-fun Settings(){
-    Text(
-        text = "this is the settings screen"
-    )
+fun Settings(navController: NavController){
+    Box(
+        modifier = Modifier.fillMaxSize(),
+        contentAlignment = Alignment.Center
+    ){
+        Image( //background
+            painter = painterResource(R.drawable.main_bg),
+            contentDescription = null,
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.Crop
+        )
+        Button(
+            onClick = {navController.navigate(route = Routes.homescreen)},
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color.White,
+                contentColor = colorResource(R.color.light_red)
+            ),
+            shape = RoundedCornerShape(24.dp),
+            modifier = Modifier
+                .align(Alignment.TopStart)
+                .padding(top = 28.dp, start = 12.dp)
+        ){
+            Text(
+                text = stringResource(R.string.back_button),
+                color = colorResource(R.color.crimson),
+                fontSize = 24.sp,
+                fontFamily = chewyFont,
+                fontWeight = FontWeight.Normal
+            )
+        }
+        Image( //logo
+            painter = painterResource(R.drawable.white_swirl),
+            contentDescription = null,
+            modifier = Modifier
+                .size(64.dp)
+                .align(Alignment.TopEnd)
+                .padding(top = 24.dp, end = 2.dp)
+        )
+    }
 }
 
 @Preview
 @Composable
 fun SettingsPreview() {
-    Settings()
+    Settings(navController = rememberNavController())
 }

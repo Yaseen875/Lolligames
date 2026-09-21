@@ -131,3 +131,17 @@ body{
     font-size: 2em;
     font-family: Anton;
 }
+a, a:link, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: pointer;
+}
+.lolligames{
+    position: absolute;
+    top: 20%;
+    margin-left: 1%;
+    color: #FFC0CB;
+    font-family: Chewy;
+    font-size: 3em;
+    z-index: 20;
+}

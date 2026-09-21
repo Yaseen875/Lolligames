@@ -32,15 +32,96 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.example.partygames.R
+import com.example.partygames.Routes
 import com.example.partygames.ui.theme.PartyGamesTheme
 import com.example.partygames.ui.theme.antonFont
 import com.example.partygames.ui.theme.chewyFont
 
 @Composable
 fun PlayMenu(navController: NavController){
-    Text(
-        text = "hi, this is the play menu!"
-    )
+    Box(
+        modifier = Modifier.fillMaxSize(),
+        contentAlignment = Alignment.Center
+    ) {
+        Image( //background
+            painter = painterResource(R.drawable.main_bg),
+            contentDescription = null,
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.Crop
+        )
+        Button(
+            onClick = {navController.navigate(route = Routes.homescreen)},
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color.White,
+                contentColor = colorResource(R.color.light_red)
+            ),
+            shape = RoundedCornerShape(24.dp),
+            modifier = Modifier
+                .align(Alignment.TopStart)
+                .padding(top = 28.dp, start = 12.dp)
+        ){
+            Text(
+                text = stringResource(R.string.back_button),
+                color = colorResource(R.color.crimson),
+                fontSize = 24.sp,
+                fontFamily = chewyFont,
+                fontWeight = FontWeight.Normal
+            )
+        }
+        Image( //logo
+            painter = painterResource(R.drawable.white_swirl),
+            contentDescription = null,
+            modifier = Modifier
+                .size(64.dp)
+                .align(Alignment.TopEnd)
+                .padding(top = 24.dp, end = 2.dp)
+        )
+        Column(
+            modifier = Modifier.fillMaxSize(),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Button(
+                onClick = {/*todo*/},
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color.White,
+                    contentColor = colorResource(R.color.light_red)
+                ),
+                shape = RoundedCornerShape(24.dp),
+                modifier = Modifier
+                    .width(240.dp)
+                    .height(150.dp)
+            ){
+                Text(
+                    text = stringResource(R.string.game_catalog),
+                    color = colorResource(R.color.crimson),
+                    fontSize = 34.sp,
+                    fontFamily = chewyFont,
+                    fontWeight = FontWeight.Normal
+                )
+            }
+            Button(
+                onClick = {/*todo*/},
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color.White,
+                    contentColor = colorResource(R.color.light_red)
+                ),
+                shape = RoundedCornerShape(24.dp),
+                modifier = Modifier
+                    .padding(top = 24.dp)
+                    .width(240.dp)
+                    .height(150.dp)
+            ){
+                Text(
+                    text = stringResource(R.string.tournaments),
+                    color = colorResource(R.color.crimson),
+                    fontSize = 38.sp,
+                    fontFamily = chewyFont,
+                    fontWeight = FontWeight.Normal
+                )
+            }
+        }
+    }
 }
 
 @Preview

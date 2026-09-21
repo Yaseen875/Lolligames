@@ -73,17 +73,6 @@ fun AboutDevs(navController: NavController){
                 fontWeight = FontWeight.Normal
             )
         }
-        /*Text( //app name
-            text = stringResource(R.string.project_name),
-            color = Color.White,
-            fontSize = 38.sp,
-            fontFamily = chewyFont,
-            fontWeight = FontWeight.Normal,
-            modifier = Modifier
-                .align(Alignment.TopStart)
-                .padding(top = 28.dp, start = 12.dp)
-
-        ) */
         Image( //logo
             painter = painterResource(R.drawable.white_swirl),
             contentDescription = null,
@@ -234,7 +223,7 @@ fun AboutDevs(navController: NavController){
                 modifier = Modifier.height(16.dp)
             )
             Button(
-                onClick = {navController.navigate(route = Routes.homescreen)},
+                onClick = {navController.navigate(route = Routes.contactus)},
                 colors = ButtonDefaults.buttonColors(
                     containerColor = Color.White,
                     contentColor = colorResource(R.color.light_red)

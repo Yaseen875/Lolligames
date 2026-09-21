@@ -37,7 +37,7 @@ class MainActivity : ComponentActivity() {
                     PlayMenu(navController)
                 }
                 composable(Routes.settings){
-                    Settings()
+                    Settings(navController)
                 }
                 composable(Routes.aboutdevs){
                     AboutDevs(navController)

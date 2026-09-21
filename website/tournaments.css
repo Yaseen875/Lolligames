@@ -1,0 +1,149 @@
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.anton-regular {
+  font-family: "Anton";
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+}
+
+.home{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.title{
+    font-family: Chewy;
+    font-size: 8vmin;
+    position: absolute;
+    top: -2.5%;
+    left: 4%;
+    color: white;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.title2{
+    font-family: Anton;
+    font-size: 4vmin;
+    position: absolute;
+    top: 10.5%;
+    left: 7%;
+    color: white;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.crown{
+    position: relative;
+    width: 20vmin;
+    bottom: 25%;
+}
+
+.question{
+    position: absolute;
+    font-family: Chewy;
+    font-size: 8vmin;
+    color: white;
+    bottom: 45%;
+    font-weight: normal;
+}
+
+.button{
+    text-decoration: none;
+    font-size: 10vmin;
+    font-family: Anton;
+    font-weight: normal;
+    padding-right: 2%;
+    padding-left: 2%;
+    text-align: center;
+    border-radius: 5%;
+    color: #de1b40;
+    background-color: white;
+    margin-left: 2%;
+    position: absolute;
+    top: 40%;
+    right: 27%;
+    transition:
+    transform 0.3s cubic-bezier(.2, 1.4, .4, 1),
+    box-shadow 0.3s ease;
+}
+
+.button:hover{
+    transform:
+    scale(1.05) translateY(-3px) rotate(1deg);
+    cursor: pointer;
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.iconlist{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.icon{
+    height: 10vmin;
+    animation: glow 1s linear infinite;
+    transition: transform 0.5s ease-out;
+}
+
+@keyframes glow {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }    
+}
+
+li{
+    width: 100%;
+    padding: 10%;
+}
+li:hover{
+    background-color: #de1b40;
+}
+
+@keyframes appear{
+    0%{
+        max-height: 0;
+        border-right: hsl(0, 72%, 44%) solid 0px;
+        border-bottom: hsl(0, 72%, 44%) solid 0px;
+    }
+    100%{
+        max-height: 50vh;
+        border-right: hsl(0, 72%, 44%) solid 3px;
+        border-bottom: hsl(0, 72%, 44%) solid 4px;
+    }
+}
+
+.icon:hover,
+.icon:hover {
+    animation-play-state: paused;
+}

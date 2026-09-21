@@ -35,10 +35,12 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 
 
 @Composable
-fun DiceRollerScreen() {
+fun DiceRollerScreen(navController: NavController) {
     DiceWithButtonAndImage(modifier = Modifier
         .fillMaxSize()
         .wrapContentSize(Alignment.Center)
@@ -99,6 +101,6 @@ fun DiceWithButtonAndImage(modifier: Modifier = Modifier) {
 @Composable
 fun DiceRollerPreview() {
     PartyGamesTheme {
-        DiceRollerScreen()
+        DiceRollerScreen(navController = rememberNavController())
     }
 }

@@ -1,0 +1,167 @@
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.anton-regular {
+  font-family: "Anton";
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+}
+
+.home{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.title{
+    font-family: Chewy;
+    font-size: 8vmin;
+    position: absolute;
+    top: -2.5%;
+    left: 4%;
+    color: white;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.title2{
+    font-family: Anton;
+    font-size: 4vmin;
+    position: absolute;
+    top: 10.5%;
+    left: 9%;
+    color: white;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.iconlist{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.icon{
+    height: 10vmin;
+    animation: glow 1s linear infinite;
+    transition: transform 0.5s ease-out;
+}
+
+@keyframes glow {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }    
+}
+
+li{
+    width: 100%;
+    padding: 10%;
+}
+li:hover{
+    background-color: #de1b40;
+}
+
+@keyframes appear{
+    0%{
+        max-height: 0;
+        border-right: hsl(0, 72%, 44%) solid 0px;
+        border-bottom: hsl(0, 72%, 44%) solid 0px;
+    }
+    100%{
+        max-height: 50vh;
+        border-right: hsl(0, 72%, 44%) solid 3px;
+        border-bottom: hsl(0, 72%, 44%) solid 4px;
+    }
+}
+
+.icon:hover,
+.icon:hover {
+    animation-play-state: paused;
+}
+
+.gamemodes img{
+    position: absolute;
+    width: 20%;
+    border: #ff9d50 solid 3px;
+    border-radius: 15%;
+}
+.game1{
+    right: 65%;
+    bottom: 50%;
+}
+
+.game2{
+    right: 65%;
+    bottom: 10%;
+}
+
+.game3{
+    left: 65%;
+    bottom: 50%;
+}
+
+.game4{
+    left: 65%;
+    bottom: 10%;
+}
+
+.gamemodes img:hover{
+    transform:
+    scale(1.02);
+    cursor: pointer;
+}
+
+.names h3{
+    font-family: Chewy;
+    font-size: 6vmin;
+    position: absolute;
+    color: white;
+    font-weight: normal;
+}
+
+.name1{
+    right: 71.5%;
+    bottom: 35%;
+}
+
+.name2{
+    right: 71.5%;
+    bottom: -5%;
+}
+
+.name3{
+    left: 71.5%;
+    bottom: 35%;
+}
+
+.name4{
+    left: 71.5%;
+    bottom: -5%;
+}

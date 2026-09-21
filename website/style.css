@@ -126,7 +126,7 @@ body{
         transform: translateX(-200px);
     }
     100%{
-        transfort: translateX(0px);
+        transform: translateX(0px);
     }
 }
 
@@ -271,11 +271,11 @@ body{
     border-right: hsl(0, 72%, 44%) solid 0px;
     border-bottom: hsl(0, 72%, 44%) solid 0px;
 }
-li{
+.dropdownitem{
     width: 100%;
     padding: 10%;
 }
-li:hover{
+.dropdownitem:hover{
     background-color: #de1b40;
     cursor: pointer;
 }
@@ -308,5 +308,3 @@ li:hover{
 .icon:hover{
     cursor: pointer;
 }
-
-

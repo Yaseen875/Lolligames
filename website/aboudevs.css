@@ -1,0 +1,133 @@
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.anton-regular {
+  font-family: "Anton";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.edu-nsw-act-cursive- {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+.dancing-script-uniquifier {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.aboutdevs{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    background-origin: center;
+}
+.clouds{
+    transform: rotate(180deg);
+    width: 110vw;
+    position: absolute;
+    top: -1%;
+    position: fixed;
+    z-index: 10;
+    
+}
+
+.title{
+    position: absolute;
+    top: 25%;
+    font-size: 20vmin;
+    width: 100vw;
+    text-align: center;
+    font-family: Chewy;
+    color: #FFC0CB
+}
+
+.the{
+    font-family: Dancing Script;
+}
+
+.cards div{
+    width: 30vw;
+    height: 20vh;
+    position: absolute;
+    top: 57%;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    background-color: white;
+    border-radius: 17%;
+    text-align: end;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+
+.Yaseen{
+    left: 33.333333vw;
+}
+
+.Yusuf{
+    left: 66.66666667vw;
+}
+
+.pfp{
+    width: 8cqw;
+    margin-top: 1.7vh;
+    margin-bottom: 1.7vh;
+    margin-right: 0.5vw;
+}
+
+.name{
+    position: absolute;
+    bottom: 25%;
+    right: 33%;
+    font-size: 3cqw;
+    color: #de1b40;
+    font-family: Anton;
+    white-space: nowrap;
+}
+
+.essaname, .yusufname{
+    right: 45%;
+}
+
+.desc{
+    position: absolute;
+    bottom: 10%;
+    right: 30%;
+    font-family: Anton;
+    font-size: 1.5cqw;
+    color: #F1045E;
+    white-space: nowrap;
+}
+
+.essadesc, .yaseendesc{
+    right: 40%;
+}
+
+.school{
+    position: absolute;
+    top: 85%;
+    width: 100vw;
+    text-align: center;
+    color:#FFC0CB;
+    font-size: 2em;
+    font-family: Anton;
+}

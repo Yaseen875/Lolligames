@@ -13,6 +13,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.partygames.aboutdevs.AboutDevs
+import com.example.partygames.contactus.ContactUs
 import com.example.partygames.diceroller.DiceRollerScreen
 import com.example.partygames.home.HomeScreen
 import com.example.partygames.playmenu.PlayMenu
@@ -39,7 +40,10 @@ class MainActivity : ComponentActivity() {
                     Settings()
                 }
                 composable(Routes.aboutdevs){
-                    AboutDevs()
+                    AboutDevs(navController)
+                }
+                composable(Routes.contactus){
+                    ContactUs(navController)
                 }
             } )
         }

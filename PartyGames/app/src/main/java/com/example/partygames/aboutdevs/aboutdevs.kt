@@ -44,7 +44,7 @@ import com.example.partygames.ui.theme.antonFont
 import com.example.partygames.ui.theme.chewyFont
 
 @Composable
-fun AboutDevs(){
+fun AboutDevs(navController: NavController){
     Box(
         modifier = Modifier.fillMaxSize()
     ){
@@ -54,7 +54,26 @@ fun AboutDevs(){
             modifier = Modifier.fillMaxSize(),
             contentScale = ContentScale.Crop
         )
-        Text( //app name
+        Button(
+            onClick = {navController.navigate(route = Routes.homescreen)},
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color.White,
+                contentColor = colorResource(R.color.light_red)
+            ),
+            shape = RoundedCornerShape(24.dp),
+            modifier = Modifier
+                .align(Alignment.TopStart)
+                .padding(top = 28.dp, start = 12.dp)
+        ){
+            Text(
+                text = stringResource(R.string.back_button),
+                color = colorResource(R.color.crimson),
+                fontSize = 24.sp,
+                fontFamily = chewyFont,
+                fontWeight = FontWeight.Normal
+            )
+        }
+        /*Text( //app name
             text = stringResource(R.string.project_name),
             color = Color.White,
             fontSize = 38.sp,
@@ -64,7 +83,7 @@ fun AboutDevs(){
                 .align(Alignment.TopStart)
                 .padding(top = 28.dp, start = 12.dp)
 
-        )
+        ) */
         Image( //logo
             painter = painterResource(R.drawable.white_swirl),
             contentDescription = null,
@@ -211,6 +230,24 @@ fun AboutDevs(){
                 fontFamily = antonFont,
                 fontWeight = FontWeight.Normal
             )
+            Spacer(
+                modifier = Modifier.height(16.dp)
+            )
+            Button(
+                onClick = {navController.navigate(route = Routes.homescreen)},
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color.White,
+                    contentColor = colorResource(R.color.light_red)
+                ),
+            ) {
+                Text(
+                    text = stringResource(R.string.contact_us),
+                    color = colorResource(R.color.crimson),
+                    fontSize = 24.sp,
+                    fontFamily = chewyFont,
+                    fontWeight = FontWeight.Normal
+                )
+            }
         }
     }
 }
@@ -218,5 +255,5 @@ fun AboutDevs(){
 @Preview
 @Composable
 fun AboutDevsPreview() {
-    AboutDevs()
+    AboutDevs(navController = rememberNavController())
 }

@@ -6,4 +6,5 @@ object Routes {
     val playmenu = "playmenu"
     val settings = "settings"
     val aboutdevs = "aboutdevs"
+    val contactus = "contactus"
 }

@@ -1,0 +1,163 @@
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.anton-regular {
+  font-family: "Anton";
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+}
+
+.home{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.title{
+    font-family: Chewy;
+    font-size: 8vmin;
+    position: absolute;
+    top: -2.5%;
+    left: 4%;
+    color: white;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.title2{
+    font-family: Anton;
+    font-size: 4vmin;
+    position: absolute;
+    top: 10.5%;
+    left: 7%;
+    color: white;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.iconlist{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.icon{
+    height: 10vmin;
+    animation: glow 1s linear infinite;
+    transition: transform 0.5s ease-out;
+}
+
+@keyframes glow {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }    
+}
+
+li{
+    width: 100%;
+    padding: 10%;
+}
+li:hover{
+    background-color: #de1b40;
+}
+
+@keyframes appear{
+    0%{
+        max-height: 0;
+        border-right: hsl(0, 72%, 44%) solid 0px;
+        border-bottom: hsl(0, 72%, 44%) solid 0px;
+    }
+    100%{
+        max-height: 50vh;
+        border-right: hsl(0, 72%, 44%) solid 3px;
+        border-bottom: hsl(0, 72%, 44%) solid 4px;
+    }
+}
+
+.icon:hover,
+.icon:hover {
+    animation-play-state: paused;
+}
+
+.choose{
+    position: absolute;
+    font-family: Chewy;
+    font-size: 8vmin;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    bottom: 65%;
+    right: 34%;
+}
+
+.text{
+    font-family: Chewy;
+    font-size: 5vmin;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+}
+
+.names{
+    position: absolute;
+    top: 25%;
+    right: 60%;
+}
+
+.random{
+    position: absolute;
+    top: 25%;
+    left: 60%;
+}
+
+.images img{
+    border: 4px #ff9d50 solid;
+    border-radius: 5%;
+}
+
+.image1{
+    position: absolute;
+    width: 25%;
+    top: 45%;
+    right:57%;
+}
+
+.image2{
+    position: absolute;
+    width: 25%;
+    top: 45%;
+    left:57%;
+}
+
+.images img:hover{
+    transform:
+    scale(1.03) rotate(3deg);
+    cursor: pointer;
+}

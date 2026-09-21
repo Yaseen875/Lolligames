@@ -359,11 +359,11 @@ body{
     border-right: hsl(0, 72%, 44%) solid 0px;
     border-bottom: hsl(0, 72%, 44%) solid 0px;
 }
-li{
+.dropdownitem{
     width: 100%;
     padding: 10%;
 }
-li:hover{
+.dropdownitem:hover{
     background-color: #de1b40;
     cursor: pointer;
 }
@@ -396,5 +396,8 @@ li:hover{
 .icon:hover{
     cursor: pointer;
 }
-
-
+a, a:link, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: pointer;
+}

@@ -52,6 +52,48 @@ body{
     font-weight: normal;
 }
 
+.crown{
+    position: relative;
+    width: 20vmin;
+    bottom: 25%;
+}
+
+.question{
+    position: absolute;
+    font-family: Chewy;
+    font-size: 8vmin;
+    color: white;
+    bottom: 45%;
+    font-weight: normal;
+}
+
+.button{
+    text-decoration: none;
+    font-size: 10vmin;
+    font-family: Anton;
+    font-weight: normal;
+    padding-right: 2%;
+    padding-left: 2%;
+    text-align: center;
+    border-radius: 5%;
+    color: #de1b40;
+    background-color: white;
+    margin-left: 2%;
+    position: absolute;
+    top: 40%;
+    right: 27%;
+    transition:
+    transform 0.3s cubic-bezier(.2, 1.4, .4, 1),
+    box-shadow 0.3s ease;
+}
+
+.button:hover{
+    transform:
+    scale(1.05) translateY(-3px) rotate(1deg);
+    cursor: pointer;
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.12);
+}
+
 .iconlist{
     display: flex;
     flex-direction: column;
@@ -104,71 +146,4 @@ li:hover{
 .icon:hover,
 .icon:hover {
     animation-play-state: paused;
-}
-
-.ga{
-    position: absolute;
-    display: block;
-    border: 4px solid;
-    border-color: #ff9d50;
-    border-radius: 5%;
-    width: 15%;
-    height: 50%;
-    text-align: center;
-    align-items: center;
-    color: #ffffff;
-    font-family: Chewy;
-    font-size: 6vmin;
-    background-color: #ee155e;
-    padding: 5%;
-    bottom: 7%;
-    right: 52%;
-}
-
-.mode1{
-    position: relative;
-    left: -7%;
-    border: 3px solid;
-    border-color: #ff9d50;
-    border-radius: 5%;
-}
-
-.tou{
-    position: absolute;
-    display: block;
-    border: 4px solid;
-    border-color: #ff9d50;
-    border-radius: 5%;
-    width: 15%;
-    height: 50%;
-    text-align: center;
-    align-items: center;
-    color: #ffffff;
-    font-family: Chewy;
-    font-size: 6vmin;
-    background-color: #ee155e;
-    padding: 5%;
-    bottom: 7%;
-    left: 52%;
-}
-
-.mode2{
-    position: relative;
-    right: 7%;
-    border: 3px solid;
-    border-color: #ff9d50;
-    border-radius: 5%
-}
-
-.modes div:hover{
-    transform:
-    scale(1.02);
-    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.356);
-    cursor: pointer;
-}
-
-a, a:link, a:visited, a:hover, a:active {
-    color: inherit;
-    text-decoration: inherit;
-    cursor: pointer;
 }

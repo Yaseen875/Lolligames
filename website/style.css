@@ -221,6 +221,7 @@ body{
 .images img:hover{
     transform:
     scale(1.05) translateY(-3px) rotate(1deg);
+    cursor: pointer;
 }
 
 .scrollable2{
@@ -389,7 +390,7 @@ body{
 }
 
 .icon:hover + .dropdown, .dropdown:hover{
-    animation: appear 1s ease-out forwards; 
+    animation: appear 1s ease-out forwards;
 }
 
 

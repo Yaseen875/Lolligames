@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .chewy-regular {
   font-family: "Chewy", system-ui;
   font-weight: 400;
@@ -32,7 +38,7 @@ body{
 }
 
 .aboutdevs{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     overflow-x: hidden;
     background-image: url(images/background.png);
@@ -42,7 +48,7 @@ body{
 }
 .clouds{
     transform: rotate(180deg);
-    width: 110vw;
+    width: 100cqw;
     position: absolute;
     top: -1%;
     position: fixed;
@@ -54,7 +60,7 @@ body{
     position: absolute;
     top: 25%;
     font-size: 20vmin;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     font-family: Chewy;
     color: #FFC0CB
@@ -96,7 +102,7 @@ body{
 
 .name{
     position: absolute;
-    bottom: 25%;
+    bottom: 40%;
     right: 33%;
     font-size: 3cqw;
     color: #de1b40;
@@ -110,7 +116,7 @@ body{
 
 .desc{
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     right: 30%;
     font-family: Anton;
     font-size: 1.5cqw;
@@ -125,9 +131,9 @@ body{
 .school{
     position: absolute;
     top: 85%;
-    width: 100vw;
+    width: 100%;
     text-align: center;
-    color:#FFC0CB;
+    color:white;
     font-size: 2em;
     font-family: Anton;
 }
@@ -138,10 +144,130 @@ a, a:link, a:visited, a:hover, a:active {
 }
 .lolligames{
     position: absolute;
-    top: 20%;
-    margin-left: 1%;
-    color: #FFC0CB;
+    top: 22%;
+    margin-left: 2%;
+    color: white;
     font-family: Chewy;
     font-size: 3em;
     z-index: 20;
+}
+
+.contact{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFC0CB;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+}
+
+.contactus{
+    color: white;
+    margin-left: 2%;
+    font-family: Chewy;
+    font-size: 3em;
+    width: 100%;
+    position: relative;
+    z-index: 20;
+    bottom: 9%;
+}
+
+.firstrow, .secondrow{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2%;
+    margin-left: -3%;
+}
+
+.secondrow{
+    position: relative;
+    top: 3%;
+}
+
+.whatsapp, .instagram, .facebook, .github, .gmail{
+    width: 30vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    border-radius: 20%;
+}
+
+.whatsapp{
+    background-color: #25D366;
+}
+
+.instagram{
+    background: linear-gradient(
+    135deg, 
+    #ffc837 0%, 
+    #ff8008 20%, 
+    #ff007f 45%, 
+    #e100ff 70%, 
+    #7f00ff 100%
+    );
+}
+
+.facebook{
+    background-color: #1877F2;
+}
+
+.github{
+    background-color: #24292E;
+}
+
+.gmail{
+    background: linear-gradient(135deg, 
+        #4285F4 0%, 
+        #4285F4 25%, 
+        #EA4335 25%, 
+        #EA4335 50%, 
+        #FBBC04 50%, 
+        #FBBC04 75%, 
+        #34A853 75%, 
+        #34A853 100%);
+}
+
+.text{
+    color: white;
+    font-size:clamp(1rem, 3.5cqmin, min(1.7cqw, 3.5cqh)); 
+    font-family: Anton;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.fa-whatsapp, .fa-instagram, .fa-square-facebook, .fa-github{
+    position: absolute;
+    font-size: clamp(1rem, 12cqmin, 6cqw);
+    color: white;
+}
+
+.fa-github{
+    left: 41%;
+}
+
+.fa-whatsapp{
+    left: 25%;
+}
+
+.fa-instagram{
+    right: 36%;
+}
+
+.fa-square-facebook{
+    right: 4%;
+}
+
+.fa-gmail{
+    width: clamp(1rem, 12cqmin, 6cqw);
+    position: absolute;
+    right: 20%;
 }

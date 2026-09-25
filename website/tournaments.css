@@ -147,3 +147,9 @@ li:hover{
 .icon:hover {
     animation-play-state: paused;
 }
+
+a, a:link, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: pointer;
+}

@@ -1,0 +1,145 @@
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.anton-regular {
+  font-family: "Anton";
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+}
+
+.home{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background-image: url(../images/White\ bg.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.go_back{
+    position: absolute;
+    width: 5%;
+    bottom: 86%;
+    right: 93%;
+}
+
+.go_back:hover{
+    transform:
+    scale(1.02);
+    cursor: pointer;
+}
+
+.forWho{
+    position: absolute;
+    font-family: chewy;
+    font-size: 6vmin;
+    font-weight: normal;
+    text-align: center;
+    left: 42%;
+    bottom: 78%;
+    color: #de1b40;
+}
+
+.forImposter{
+    position: absolute;
+    font-family: Chewy;
+    font-size: 8vmin;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 7%;
+    left: 39%;
+    bottom: 63%;
+    color: #ff9d50;
+}
+
+.images img{
+    position: absolute;
+    width: 25%;
+    bottom: 30%;
+}
+
+.forRed img{
+    width: 30%;
+    bottom: 28%;
+}
+
+.red{
+    left: 35%;
+    z-index: 2;
+}
+
+.triangleArrow img{
+    width: 10%;
+    bottom: 60%;
+    right: 45%;
+}
+
+.margin{
+    left: 35.5%;
+    z-index: 1;
+}
+
+.yellow1{
+    left: 30%;
+}
+
+.yellow2{
+    right: 30%;
+}
+
+.desc{
+    position: absolute;
+    font-family: Anton;
+    font-size: 2.5vmin;
+    font-weight: normal;
+    text-align: center;
+    color: #de1b40;
+    top: 72%;
+}
+
+.play{
+    position: absolute;
+    top: 77%;
+    right: 43%;
+    text-decoration: none;
+    font-size: 8vmin;
+    font-family: Anton;
+    font-weight: normal;
+    padding-right: 3%;
+    padding-left: 3%;
+    text-align: center;
+    border-radius: 20%;
+    color: white;
+    background-color: #de1b40;
+    margin-left: 2%;
+    transition:
+    transform 0.3s cubic-bezier(.2, 1.4, .4, 1),
+    box-shadow 0.3s ease;
+}
+
+.play:hover{
+    transform:
+    scale(1.03) translateY(-2px);
+    cursor: pointer;
+    background-color: #f82047;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: pointer;
+}

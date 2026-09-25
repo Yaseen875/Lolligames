@@ -1,0 +1,143 @@
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.anton-regular {
+  font-family: "Anton";
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+}
+
+.home{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background-image: url(../images/White\ bg.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.go_back{
+    position: absolute;
+    width: 5%;
+    bottom: 86%;
+    right: 93%;
+}
+
+.go_back:hover{
+    transform:
+    scale(1.02);
+    cursor: pointer;
+}
+
+.forWho{
+    position: absolute;
+    font-family: chewy;
+    font-size: 6vmin;
+    font-weight: normal;
+    text-align: center;
+    left: 42%;
+    bottom: 78%;
+    color: #de1b40;
+}
+
+.forImposter{
+    position: absolute;
+    font-family: Chewy;
+    font-size: 8vmin;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 7%;
+    left: 39%;
+    bottom: 63%;
+    color: #ff9d50;
+}
+
+.players{
+    position: absolute;
+    font-family: Anton;
+    font-size: 5vmin;
+    font-weight: normal;
+    text-align: center;
+    left: 41%;
+    bottom: 62%;
+    color: #de1b40;
+}
+
+.imposters{
+    position: absolute;
+    font-family: Anton;
+    font-size: 5vmin;
+    font-weight: normal;
+    text-align: center;
+    left: 40%;
+    bottom: 38%;
+    color: #de1b40;
+}
+
+.inputs input{
+    position: absolute;
+    font-size: 5vmin;
+    text-align: center;
+    color: white;
+    background-color: #de1b40;
+    width: 15%;
+    height: 10%;
+    border: 5px #ff9d50 solid;
+    border-radius: 20%;
+    right: 42%;
+}
+
+.input1{
+    bottom: 48%;
+}
+
+.input2{
+    bottom: 24%;
+}
+
+.next{
+    position: absolute;
+    top: 75%;
+    right: 44.3%;
+    text-decoration: none;
+    font-size: 6vmin;
+    font-family: Anton;
+    font-weight: normal;
+    padding-right: 3%;
+    padding-left: 3%;
+    text-align: center;
+    border-radius: 20%;
+    color: white;
+    background-color: #ff9d50;
+    margin-left: 2%;
+    transition:
+    transform 0.3s cubic-bezier(.2, 1.4, .4, 1),
+    box-shadow 0.3s ease;
+}
+
+.next:hover{
+    transform:
+    scale(1.03) translateY(-2px);
+    cursor: pointer;
+    background-color: #ffa662;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: pointer;
+}

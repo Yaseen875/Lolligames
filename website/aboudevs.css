@@ -45,6 +45,8 @@ body{
     background-position: center;
     background-size: cover;
     background-origin: center;
+    position: sticky;
+    top: 0; 
 }
 .clouds{
     transform: rotate(180deg);
@@ -52,8 +54,7 @@ body{
     position: absolute;
     top: -1%;
     position: fixed;
-    z-index: 10;
-    
+    z-index: 10;   
 }
 
 .title{
@@ -144,7 +145,7 @@ a, a:link, a:visited, a:hover, a:active {
 }
 .lolligames{
     position: absolute;
-    top: 22%;
+    top: 27%;
     margin-left: 2%;
     color: white;
     font-family: Chewy;
@@ -163,6 +164,8 @@ a, a:link, a:visited, a:hover, a:active {
     flex-direction: column;
     justify-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 2;
 }
 
 .contactus{
@@ -174,6 +177,9 @@ a, a:link, a:visited, a:hover, a:active {
     position: relative;
     z-index: 20;
     bottom: 9%;
+    animation: slidetotheleft 0.3s forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 
 .firstrow, .secondrow{
@@ -199,6 +205,9 @@ a, a:link, a:visited, a:hover, a:active {
     display: flex;
     align-items: center;
     border-radius: 20%;
+    animation: pop 1s forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 
 .whatsapp{
@@ -250,24 +259,31 @@ a, a:link, a:visited, a:hover, a:active {
     color: white;
 }
 
-.fa-github{
-    left: 41%;
-}
-
-.fa-whatsapp{
-    left: 25%;
-}
-
-.fa-instagram{
-    right: 36%;
-}
-
-.fa-square-facebook{
-    right: 4%;
+.fa-whatsapp, .fa-instagram, .fa-square-facebook, .fa-github, .fa-gmail{
+    left: 75%;
 }
 
 .fa-gmail{
     width: clamp(1rem, 12cqmin, 6cqw);
     position: absolute;
-    right: 20%;
+}
+
+@keyframes pop {
+    0%{
+        opacity: 0;
+        transform: scale(0.7) translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes slidetotheleft  {
+    0%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }

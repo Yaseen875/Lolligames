@@ -1,0 +1,93 @@
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.anton-regular {
+  font-family: "Anton";
+  font-weight: 400;
+  font-style: normal;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: pointer;
+}
+
+body{
+    background-image: url(images/white\ background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-origin: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    font-size: 10vmin;
+    color: #ff9d50;
+    font-family: Chewy;
+}
+
+.pointer{
+    position: absolute;
+    height: 20vh;
+    top: 15%;
+}
+
+.image{
+    height: 40vh;
+    position: absolute;
+    top: 34%;
+}
+
+.back{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    height: 15vh;
+}
+
+.text{
+    position: absolute;
+    font-family: Anton;
+    font-size: 1.1vw;
+    font-weight: normal;
+    text-align: center;
+    color: #de1b40;
+    bottom: 14%;
+}
+
+.button{
+    position: absolute;
+    bottom: -5%;
+    font-size: 8vmin;
+    font-family: Anton;
+    font-weight: normal;
+    padding-right: 3%;
+    padding-left: 3%;
+    text-align: center;
+    border-radius: 20%;
+    color: white;
+    background-color: #de1b40;
+    transition:
+    transform 0.3s cubic-bezier(.2, 1.4, .4, 1),
+    box-shadow 0.3s ease;
+}
+
+.button:hover{
+    transform:
+    scale(1.03) translateY(-2px);
+    cursor: pointer;
+    background-color: #f82047;
+}

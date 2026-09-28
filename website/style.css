@@ -16,6 +16,11 @@ body{
     overflow-x: hidden;
 }
 
+.home::selection{
+    background-color: white;
+    color: #de1b40;
+}
+
 .home{
     position: sticky;
     top: 0;
@@ -75,6 +80,15 @@ body{
     box-shadow 0.3s ease;
 }
 
+.play::selection{
+    background-color: #de1b40;
+    color: white;
+}
+
+.buttons::selection{
+    background-color: white;
+    color: #ff9d50;
+}
 
 .play:hover{
     transform:
@@ -97,7 +111,15 @@ body{
     width: 100%;
     min-height: 85vh;
     z-index: 2;
-    background: white;
+    background-image: url(images/White\ bg.png);
+    background-position: center;
+    background-size: cover;
+    background-origin: center;
+}
+
+.scrollable::selection{
+    background-color: #de1b40;
+    color: white;
 }
 
 .clouds{
@@ -119,6 +141,11 @@ body{
     animation: slidetotheleft 0.3s forwards;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
+}
+
+.about::selection{
+    background-color: #ff9d50;
+    color: white;
 }
 
 @keyframes slidetotheleft  {
@@ -187,7 +214,7 @@ body{
 
 .images img{
     width: 25vmin;
-    border-radius: 5%;
+    border-radius: 2vh;
 }
 
 .image1{
@@ -228,7 +255,15 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    margin-top: 5%;
+    background-image: url(images/White\ bg.png);
+    background-position: center;
+    background-size: cover;
+    background-origin: center;
+}
+
+.scrollable2::selection{
+    background-color: #de1b40;
+    color: white;
 }
 
 .settings{
@@ -237,6 +272,11 @@ body{
     font-family: Chewy;
     font-size: 6vmin;
     margin-left: 2%;
+}
+
+.settings::selection{
+    background-color: #ff9d50;
+    color: white;
 }
 
 .options{
@@ -352,7 +392,7 @@ body{
     margin: 0;
     background-color: hsla(0, 0%, 100%, 20%);
     box-sizing: border-box;
-    border-radius: 10%;
+    border-radius: 2vh;
     padding: 0;
     width: 120%;
     overflow: hidden;
@@ -402,3 +442,4 @@ a, a:link, a:visited, a:hover, a:active {
     text-decoration: inherit;
     cursor: pointer;
 }
+

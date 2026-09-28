@@ -37,6 +37,11 @@ body{
     padding: 0;
 }
 
+.aboutdevs::selection{
+    background-color: white;
+    color: #de1b40;
+}
+
 .aboutdevs{
     width: 100%;
     height: 100vh;
@@ -79,11 +84,16 @@ body{
     margin-left: 1.5vw;
     margin-right: 1.5vw;
     background-color: white;
-    border-radius: 17%;
+    border-radius: 4vh;
     text-align: end;
     display: flex;
     align-items: end;
     flex-direction: column;
+}
+
+.cards::selection{
+    color: white;
+    background-color: #de1b40;;
 }
 
 .Yaseen{
@@ -138,6 +148,12 @@ body{
     font-size: 2em;
     font-family: Anton;
 }
+
+.school::selection{
+    color: #de1b40;
+    background-color: white;
+}
+
 a, a:link, a:visited, a:hover, a:active {
     color: inherit;
     text-decoration: inherit;
@@ -156,7 +172,10 @@ a, a:link, a:visited, a:hover, a:active {
 .contact{
     width: 100%;
     height: 100vh;
-    background-color: #FFC0CB;
+    background-image: url(images/pink\ bg.png);
+    background-position: center;
+    background-size: cover;
+    background-origin: center;
     gap: 10px;
     display: flex;
     align-items: center;
@@ -182,6 +201,11 @@ a, a:link, a:visited, a:hover, a:active {
     animation-range: entry 0% cover 30%;
 }
 
+.contactus::selection{
+    background-color: white;
+    color: #FFC0CB;
+}
+
 .firstrow, .secondrow{
     width: 100%;
     display: flex;
@@ -204,7 +228,7 @@ a, a:link, a:visited, a:hover, a:active {
     height: 20vh;
     display: flex;
     align-items: center;
-    border-radius: 20%;
+    border-radius: 4vh;
     animation: pop 1s forwards;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
@@ -212,6 +236,11 @@ a, a:link, a:visited, a:hover, a:active {
 
 .whatsapp{
     background-color: #25D366;
+}
+
+.whatsapp::selection{
+    background-color: white;
+    color: #25D366;
 }
 
 .instagram{
@@ -225,12 +254,27 @@ a, a:link, a:visited, a:hover, a:active {
     );
 }
 
+.instagram::selection{
+    background-color: white;
+    color: #ff007f
+}
+
 .facebook{
     background-color: #1877F2;
 }
 
+.facebook::selection{
+    background-color: white;
+    color: #1877F2;
+}
+
 .github{
     background-color: #24292E;
+}
+
+.github::selection{
+    color: #24292E;
+    background-color: white;
 }
 
 .gmail{
@@ -243,6 +287,11 @@ a, a:link, a:visited, a:hover, a:active {
         #FBBC04 75%, 
         #34A853 75%, 
         #34A853 100%);
+}
+
+.gmail::selection{
+    color: #34A853;
+    background-color: white;
 }
 
 .text{

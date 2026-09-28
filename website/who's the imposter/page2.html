@@ -3,54 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lolligames</title>
+    <title>Who's the imposter</title>
     <link rel="icon" href="../images/imposter icon.png">
     <link rel="stylesheet" href="page2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Chewy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="">
 </head>
+
+
 <body>
-    <div class="home">
-        <a href="../games_menu.html"><img src="../images/Left arrow.svg" alt="go back" class="go_back"></a>
-        <div class="title">
-            <div class="forWho">
-                <h2 class="who_the">Who's the</h2>
-            </div>
-            <div class="forImposter">
-                <h2 class="imposter">imposter</h2>
-            </div>
-        
-            <div class="buttons">
-                <button class="insert" id="name" onclick="names()">Insert names</button>
-                <button class="assign" id="num" onclick="nums()">Assign numbers</button>
-            </div>
-            <div class="selection1" id="main2">
-            <div class="numbers">
-                <label class="identifier_playersid">Number of players</label><br>
-                <label class="imposters">Number of imposters</label><br>
-            </div>
-            <input type="text" placeholder="-" id="numinput"><br>
-            <div class="choices">
-                <span class="choice1-span"></span><p class="choice1">1</p>
-                <span class="choice2-span"></span><p class="choice2">2</p>
-                <span class="choice3-span"></span><p class="choice3">3</p>
-            </div>
-            <div class="nextBtn1">
-            <div class="idk1"><button class="next1">Next</button></div>
-            </div>    
-            </div>
+    <a href="page1.html"><img src="../images/Left arrow.svg" alt="go back" class="go_back"></a>
+    <div class="title">
+        <div class="forWho">
+            <h2 class="who_the">Who's the</h2>
         </div>
-        <div class="names" id="main1">
-            <p class="identifier">Add players!</p>
-            <div class="row">
-                <input type="text" id="nameinput" placeholder="Type player name">
-                <button class="add" onclick="add()">Add</button>
-            </div>
-        <ul class="players" id="list"></ul>
-            <div class="idk2"><button class="next2">Next</button></div>
+        <div class="forImposter">
+            <h2 class="imposter">imposter</h2>
         </div>
+        <button class="insert" id="name" onclick="names()">Insert names</button>
+        <button class="assign" id="num" onclick="nums()">Assign numbers</button>
     </div>
-    <script src="../wink murder/script.js"></script>
+    <div class="main2" id="main2">
+        <p class="identifier playersid">The number of players:</p>
+        <input type="text" id="numinput" placeholder="The number of players">
+        <div class="choices">
+            <span class="choice1-span"></span><p class="choice1">1</p>
+            <span class="choice2-span"></span><p class="choice2">2</p>
+            <span class="choice3-span"></span><p class="choice3">3</p>
+        </div>
+        <div class="center"><button class="start">Start</button></div>
+    </div>
+    <div class="main" id="main1">
+        <p class="identifier"> Add players!</p>
+        <div class="row">
+            <input type="text" id="nameinput" placeholder="Type player name">
+            <button class="add" onclick="add()">Add</button>
+        </div>
+        <ul class="players" id="list">
+        </ul>
+        <div class="center"><button class="start">Start</button></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

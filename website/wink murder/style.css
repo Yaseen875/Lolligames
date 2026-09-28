@@ -39,12 +39,22 @@ body{
     padding: 0;
 }
 
+body::selection{
+    background-color: #de1b40;
+    color: white;
+}
+
 .title{
     font-size: 10vmin;
     color: #ff9d50;
     font-family: Chewy;
     position: relative;
     top: 5%;
+}
+
+.title::selection{
+    background-color: #ff9d50;
+    color: white;
 }
 
 .pointer{
@@ -108,7 +118,7 @@ body{
     padding-right: 3%;
     padding-left: 3%;
     text-align: center;
-    border-radius: 20%;
+    border-radius: 3vh;
     color: white;
     background-color: #de1b40;
     transition:
@@ -121,6 +131,11 @@ body{
     scale(1.03) translateY(-2px);
     cursor: pointer;
     background-color: #f82047;
+}
+
+.button::selection{
+    background-color: white;
+    color: #de1b40;
 }
 
 .main2{
@@ -174,6 +189,7 @@ body{
     color: white;
     font-size: 3vmin;
     font-family: Anton;
+    text-align: center;
 }
 
 #nameinput::placeholder, #numinput::placeholder{
@@ -231,7 +247,7 @@ button:hover{
 .insert, .assign{
     width: 46%;
     font-size: 3.5vmin;
-    border-radius: 20px 20px 0 0;
+    border-radius: 3vh 3vh 0 0;
     background-color: rgb(171, 171, 171);
     color: white;
 }

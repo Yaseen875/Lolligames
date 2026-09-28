@@ -16,6 +16,11 @@ body{
     overflow-x: hidden;
 }
 
+::selection{
+    color: #de1b40;
+    background-color: white;
+}
+
 .home{
     position: sticky;
     top: 0;
@@ -110,7 +115,7 @@ li:hover{
     position: absolute;
     width: 20%;
     border: #ff9d50 solid 3px;
-    border-radius: 15%;
+    border-radius: 4vh;
 }
 .game1{
     right: 65%;

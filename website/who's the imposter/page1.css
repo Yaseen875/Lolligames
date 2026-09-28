@@ -53,6 +53,11 @@ body{
     color: #de1b40;
 }
 
+.forWho::selection{
+    background-color: #de1b40;
+    color: white;
+}
+
 .forImposter{
     position: absolute;
     font-family: Chewy;
@@ -63,6 +68,11 @@ body{
     left: 39%;
     bottom: 63%;
     color: #ff9d50;
+}
+
+.forImposter::selection{
+    background-color: #ff9d50;
+    color: white;
 }
 
 .images img{
@@ -110,6 +120,11 @@ body{
     top: 72%;
 }
 
+.desc::selection{
+    background-color: #de1b40;
+    color: white;
+}
+
 .play{
     position: absolute;
     top: 77%;
@@ -121,13 +136,18 @@ body{
     padding-right: 3%;
     padding-left: 3%;
     text-align: center;
-    border-radius: 20%;
+    border-radius: 3vh;
     color: white;
     background-color: #de1b40;
     margin-left: 2%;
     transition:
     transform 0.3s cubic-bezier(.2, 1.4, .4, 1),
     box-shadow 0.3s ease;
+}
+
+.play::selection{
+    background-color: white;
+    color: #de1b40;   
 }
 
 .play:hover{

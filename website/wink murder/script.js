@@ -1,20 +1,41 @@
-const box = document.getElementById("box");
+const nameinput = document.getElementById("nameinput");
 const list = document.getElementById("list");
+const num = document.getElementById("num");
+const namesss = document.getElementById("name");
+const main1 = document.getElementById("main1");
+const main2 = document.getElementById("main2");
+
 
 function add(){
-    if(box.value === ''){
+    if(nameinput.value === ''){
         alert("You have to insert player's name!")
     }
     else{
         let li = document.createElement("li");
-        li.innerHTML = box.value;
+        li.innerHTML = nameinput.value;
         list.appendChild(li);
     }
-    box.value = '';
+    nameinput.value = '';
 }
 
-box.addEventListener("keypress", function(event){
+nameinput.addEventListener("keypress", function(event){
     if(event.key === "Enter"){
         add();
     }
 });
+
+
+
+function names(){
+    namesss.style.backgroundColor = '#ff9d50';
+    num.style.backgroundColor = 'rgb(171, 171, 171)';
+    main1.style.display = 'block';
+    main2.style.display = 'none';
+}
+
+function nums(){
+    num.style.backgroundColor = '#ff9d50';
+    namesss.style.backgroundColor = 'rgb(171, 171, 171)';
+    main1.style.display = 'none';
+    main2.style.display = 'block';
+}

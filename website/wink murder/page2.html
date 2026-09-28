@@ -17,16 +17,22 @@
     <h1 class="title">Wink Murder</h1>
     <a href="../wink murder/wink murder.html"><img src="images/back.png" alt="leftarrow" class="back"></a>
     <img src="images/wink.png" alt="Wink murder" class="icon">
-    <div class="main">
+    <div class="buttons">
+        <button class="insert" id="name" onclick="names()">Insert names</button>
+        <button class="assign" id="num" onclick="nums()">Assign numbers</button>
+    </div>
+    <div class="main2" id="main2">
+        <p class="identifier playersid">The number of players:</p>
+        <input type="text" id="numinput" placeholder="The number of players">
+        <div class="center"><button class="start">Start</button></div>
+    </div>
+    <div class="main" id="main1">
         <p class="identifier"> Add players!</p>
         <div class="row">
-            <input type="text" id="box" placeholder="Type player name">
+            <input type="text" id="nameinput" placeholder="Type player name">
             <button class="add" onclick="add()">Add</button>
         </div>
         <ul class="players" id="list">
-            <!-- <li>Player 1</li>
-            <li>Player 2</li>
-            <li>Player 3</li> -->
         </ul>
         <div class="center"><button class="start">Start</button></div>
     </div>

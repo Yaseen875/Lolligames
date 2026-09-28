@@ -123,7 +123,19 @@ body{
     background-color: #f82047;
 }
 
+.main2{
+    width: 30vw;
+    background-color: #de1b40;
+    margin-top: 17vh;
+    border-radius: 5vh;
+    padding: 1%;
+    text-align: center;
+}
+
+
+
 .main{
+    display: none;
     width: 30vw;
     background-color: #de1b40;
     margin-top: 17vh;
@@ -149,7 +161,7 @@ body{
     margin-bottom: 0;
 }
 
-#box{
+#numinput, #nameinput{
     width: 65%;
     background-color: transparent;
     border: none;
@@ -164,12 +176,13 @@ body{
     font-family: Anton;
 }
 
-#box::placeholder{
+#nameinput::placeholder, #numinput::placeholder{
     color: white;
+    text-align: center;
     opacity: 0.7;
 }
 
-.add, .start{
+.add, .start, .assign, .insert{
     background-color: #ff9d50;
     z-index: 2;
     border: none;
@@ -213,4 +226,34 @@ button:hover{
     position: relative;
     margin-top: 5%;
     left: 7%;
+}
+
+.insert, .assign{
+    width: 46%;
+    font-size: 3.5vmin;
+    border-radius: 20px 20px 0 0;
+    background-color: rgb(171, 171, 171);
+    color: white;
+}
+
+.assign{
+    background-color: #ff9d50;
+}
+
+.buttons{
+    display: flex;
+    width: 26vw;
+    justify-content: space-between;
+    position: relative;
+    top: 17%;
+}
+
+.insert:hover, .assign:hover{
+    transform: rotate(0) scale(1.05);
+    box-shadow: none;
+}
+
+.playersid{
+    font-size: 5vmin;
+    left: 0;
 }

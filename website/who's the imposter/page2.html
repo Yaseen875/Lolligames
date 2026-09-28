@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lolligames</title>
-    <link rel="icon" href="../images/Red icon.png">
+    <link rel="icon" href="../images/imposter icon.png">
     <link rel="stylesheet" href="page2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,16 +20,37 @@
             <div class="forImposter">
                 <h2 class="imposter">imposter</h2>
             </div>
+        
+            <div class="buttons">
+                <button class="insert" id="name" onclick="names()">Insert names</button>
+                <button class="assign" id="num" onclick="nums()">Assign numbers</button>
+            </div>
+            <div class="selection1" id="main2">
+            <div class="numbers">
+                <label class="identifier_playersid">Number of players</label><br>
+                <label class="imposters">Number of imposters</label><br>
+            </div>
+            <input type="text" placeholder="-" id="numinput"><br>
+            <div class="choices">
+                <span class="choice1-span"></span><p class="choice1">1</p>
+                <span class="choice2-span"></span><p class="choice2">2</p>
+                <span class="choice3-span"></span><p class="choice3">3</p>
+            </div>
+            <div class="nextBtn1">
+            <div class="idk1"><button class="next1">Next</button></div>
+            </div>    
+            </div>
         </div>
-        <label class="players">Number of players</label><br>
-        <label class="imposters">Number of imposters</label><br>
-        <div class="inputs">
-            <input type="text" placeholder="-" class="input1"><br>
-            <input type="text" placeholder="-" class="input2"><br>
-        </div>
-        <div class="nextBtn">
-            <span class="next-span"></span><p class="next">Next</p>
+        <div class="names" id="main1">
+            <p class="identifier">Add players!</p>
+            <div class="row">
+                <input type="text" id="nameinput" placeholder="Type player name">
+                <button class="add" onclick="add()">Add</button>
+            </div>
+        <ul class="players" id="list"></ul>
+            <div class="idk2"><button class="next2">Next</button></div>
         </div>
     </div>
+    <script src="../wink murder/script.js"></script>
 </body>
 </html>
